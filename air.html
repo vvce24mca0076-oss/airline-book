@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Booking</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Overlay to make text readable */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.6);
+            z-index: -1;
+        }
+
+        header {
+            background-color: rgba(0,51,102,0.9);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 3px solid white;
+        }
+
+        .flight-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 1100px;
+        }
+
+        .flight-card {
+            background-color: white;
+            width: 280px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        .flight-img {
+            width: 100%;
+            height: 160px;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .flight-card h2 {
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
+
+        .book-btn {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 12px;
+        }
+
+        .book-btn:hover {
+            background-color: #090b0e;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0,51,102,0.9);
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Creating Airline Booking</h1>
+
+<!-- Background overlay -->
+<div class="overlay"></div>
+
+<header>
+    <h1>Welcome to Airline Booking</h1>
+    <p>Choose a flight and book your trip!</p>
+</header>
+
+<div class="flight-container">
+
+    <div class="flight-card">
+        <img src="images/newyork.jpg" class="flight-img" alt="New York">
+        <h2>New York</h2>
+        <p>Price: $500</p>
+        <p>Available Seats: 10</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="flight-card">
+        <img src="images/london.jpg" class="flight-img" alt="London">
+        <h2>London</h2>
+        <p>Price: $700</p>
+        <p>Available Seats: 5</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+    <div class="flight-card">
+        <img src="images/paris.jpg" class="flight-img" alt="Paris">
+        <h2>Paris</h2>
+        <p>Price: $600</p>
+        <p>Available Seats: 8</p>
+        <button class="book-btn">Book Now</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Airline Booking System</p>
+</footer>
+
+</body>
+</html>
